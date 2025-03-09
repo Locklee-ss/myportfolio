@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
-import HeroImg from "../../images/HeroImage.jpg";
+import HeroImg from "../../images/HeroImage.png";
 import HeroBgAnimation from "../HeroBgAnimation";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
@@ -179,8 +179,7 @@ const ResumeButton = styled.a`
 
 const Img = styled.img`
   border-radius: 50%;
-  width: 100%;
-  height: 100%;
+  width: 300px;
   max-width: 400px;
   max-height: 400px;
   border: 2px solid ${({ theme }) => theme.primary};
@@ -256,7 +255,7 @@ const Hero = () => {
             <HeroRightContainer>
               <motion.div {...headContentAnimation}>
                 <Tilt>
-                  <Img src={HeroImg} alt="Rishav Chanda" />
+                  <Img src={HeroImg} alt="Anh Quan Khuat" />
                 </Tilt>
               </motion.div>
             </HeroRightContainer>

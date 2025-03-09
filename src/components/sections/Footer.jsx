@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import TelegramIcon from "@mui/icons-material/Telegram";
+import PhoneIcon from "@mui/icons-material/Phone";
+import SkypeIcon from "@mui/icons-material/Microsoft";
+
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -88,7 +88,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>Rishav Chanda</Logo>
+        <Logo>Anh Quan Khuat</Logo>
         <Nav>
           <NavLink href="#About">About</NavLink>
           <NavLink href="#Skills">Skills</NavLink>
@@ -96,21 +96,16 @@ const Footer = () => {
           <NavLink href="#Projects">Projects</NavLink>
           <NavLink href="#Education">Education</NavLink>
         </Nav>
+        <PhoneIcon />+84 359591558
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.facebook} target="display">
-            <FacebookIcon />
+          <SocialMediaIcon href={Bio.telegram} target="display">
+            <TelegramIcon />
           </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.twitter} target="display">
-            <TwitterIcon />
-          </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.linkedin} target="display">
-            <LinkedInIcon />
-          </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.insta} target="display">
-            <InstagramIcon />
+          <SocialMediaIcon href={Bio.skype} target="display">
+            <SkypeIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2024 Rishav Chanda. All rights reserved.</Copyright>
+        <Copyright>&copy; 2025 Anh Quan Khuat. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );
